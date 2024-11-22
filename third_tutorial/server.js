@@ -16,6 +16,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(logger);
 
 // Setup static folder
+//app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/api/posts', posts);
